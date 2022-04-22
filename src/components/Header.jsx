@@ -134,11 +134,14 @@ const Header = () => {
           onClick={showCart}
         >
           <MdOutlineShoppingCart className="text-textColor text-2xl cursor-pointer " />
-          <div className="absolute -top-2 -right-2 w-5 h-5 rounded-full bg-cartNumBg flex items-center justify-center">
-            <p className="text-xs text-white font-semibold">
-              {cartItems.length}
-            </p>
-          </div>
+          {cartItems.length>0?(
+              <div className=" absolute -top-2 -right-2 w-5 h-5 rounded-full bg-cartNumBg flex items-center justify-center">
+              <p className="text-xs text-white font-semibold">
+                
+                {cartItems.length}
+              </p>
+            </div>
+            ):""}
         </div>
 
         <Link to={"/"} className="flex items-center gap-2 ">
