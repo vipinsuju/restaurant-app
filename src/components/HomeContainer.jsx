@@ -3,6 +3,7 @@ import Delivery from "../img/delivery.png";
 import HeroBg from "../img/heroBg.png";
 import { heroData } from "../utils/data";
 import { motion } from "framer-motion";
+import "./style.css"
 
 const HomeContainer = () => {
   return (
@@ -44,14 +45,14 @@ const HomeContainer = () => {
           Order Now
         </motion.button>
       </div>
-      <div className="py-2 flex-1  min-w-620 flex items-center flex-wrap relative">
+      <div className="py-2 flex-1  flex items-center flex-wrap relative img-width " >
         <img
           src={HeroBg}
-          className=" ml-auto h-420 w-full lg:w-auto lg:h-650"
+          className=" ml-auto h-420 w-full lg:w-auto lg:h-650  "
           alt="hero-bg"
         />
 
-        <div className="w-full h-full absolute top-0 left-0 flex items-center justify-center lg:px-32  py-4 gap-4 lg:flex-wrap">
+        <div className=" gd-width w-full h-full absolute top-0 left-0 flex items-center justify-center lg:px-32  py-4 gap-4 lg:flex-wrap">
           {heroData &&
             heroData.map((n) => (
               <div

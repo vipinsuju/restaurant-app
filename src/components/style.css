@@ -1,0 +1,29 @@
+.img-width {
+  min-width: 652px;
+}
+
+/* .gd-width{
+
+} */
+
+@media only screen and (max-width: 767px) {
+  .img-width {
+    min-width: 100%;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .gd-width {
+    flex-wrap: wrap;
+   
+  }
+}
+
+/* 
+@media only screen and (min-width:767px) and (max-width: 991.98px){
+
+    width: 100% !important;
+
+
+
+} */
