@@ -36,7 +36,7 @@ const HomeContainer = () => {
         </p>
 
         <motion.button
-          whileTap={{scale: 0.8}}
+          whileTap={{scale:0.6}}
           type="button"
           className=" text-white bg-gradient-to-br from-orange-400 to-orange-600 w-full md:w-auto px-5 py-3  rounded-lg hover:shadow-lg transition-all ease-in-out duration-100"
         >
