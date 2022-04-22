@@ -2,6 +2,7 @@ import React from "react";
 import Delivery from "../img/delivery.png";
 import HeroBg from "../img/heroBg.png";
 import { heroData } from "../utils/data";
+import { motion } from "framer-motion";
 
 const HomeContainer = () => {
   return (
@@ -34,13 +35,14 @@ const HomeContainer = () => {
         Food ordering apps have made the lockdowns less arduous. It's amazing how you can just think of your favorite food, order it online using food ordering apps, and all you have to do is just wait till it arrives at your doorstep.
         </p>
 
-        <button
+        <motion.button
+          whileTap={{scale: 0.8}}
           type="button"
           className=" text-white bg-gradient-to-br from-orange-400 to-orange-600 w-full md:w-auto px-5 py-3  rounded-lg hover:shadow-lg transition-all ease-in-out duration-100"
         >
           
           Order Now
-        </button>
+        </motion.button>
       </div>
       <div className="py-2 flex-1  min-w-620 flex items-center flex-wrap relative">
         <img
